@@ -71,7 +71,7 @@ while cap.isOpened():
     if len(captured_frames) == MAX_FRAMES and captured_frames:
         
         # convert captured frames into the same format as training data
-        input_data = np.array(captured_frames, dtype=np.float32)
+        input_data = np.array(captured_frames, dtype = np.float32)
 
         # flatten the data
         input_data = input_data.flatten()
